@@ -33,15 +33,33 @@ function generatePassword() {
   var lowercaseConfirm = 
     window.confirm("Would you like lowercase letters in your password? Click OK for YES or click Cancel for NO"
     );
+      if (lowercaseConfirm === true) {
+        passwordArray += lowercase;
+      }
   var uppercaseConfirm = 
     window.confirm("Would you like uppercase letters in your password? Click OK for YES or click Cancel for NO"
     );
+      if (uppercaseConfirm === true) {
+        passwordArray += uppercase;
+      }
   var numbersConfirm = 
     window.confirm("Would you like numbers in your password? Click OK for YES or click Cancel for NO"
     );
+      if (numbersConfirm === true) {
+        passwordArray += numbers;
+      }
   var specialConfirm =
     window.confirm("Would you like special characters in your password? Click OK for YES or click Cancel for NO"
     );
+      if (specialConfirm === true) {
+        passwordArray += special;
+      }
+    let randomPassword = "";
+    for (let i = 0; i < passwordLengthPrompt; i++) {
+      randomPassword += passwordArray[Math.floor(Math.random()*(passwordArray.length))];
+      console.log(Math.floor(Math.random()*(passwordArray.length)));  
+    }
+    return randomPassword;
 }
 
 
