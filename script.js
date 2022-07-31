@@ -54,6 +54,12 @@ function generatePassword() {
       if (specialConfirm === true) {
         passwordArray += special;
       }
+    let randomPassword = "";
+    for (let i = 0; i < passwordLengthPrompt; i++) {
+      randomPassword += passwordArray[Math.floor(Math.random()*(passwordArray.length))];
+      console.log(Math.floor(Math.random()*(passwordArray.length)));  
+    }
+    return randomPassword;
 }
 
 
