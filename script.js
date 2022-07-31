@@ -59,6 +59,7 @@ function generatePassword() {
       randomPassword += passwordArray[Math.floor(Math.random()*(passwordArray.length))];
       console.log(Math.floor(Math.random()*(passwordArray.length)));  
     }
+    return randomPassword;
 }
 
 
