@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword(password) {
+function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
@@ -31,25 +31,25 @@ function generatePassword() {
         return generatePassword();
       }
   var lowercaseConfirm = 
-    window.confirm("Would you like lowercase letters in your password? Click OK for YES or click Cancel for NO"
+    window.confirm("Would you like lowercase letters in your password? Click OK for YES or click Cancel for NO."
     );
       if (lowercaseConfirm === true) {
         passwordArray += lowercase;
       }
   var uppercaseConfirm = 
-    window.confirm("Would you like uppercase letters in your password? Click OK for YES or click Cancel for NO"
+    window.confirm("Would you like uppercase letters in your password? Click OK for YES or click Cancel for NO."
     );
       if (uppercaseConfirm === true) {
         passwordArray += uppercase;
       }
   var numbersConfirm = 
-    window.confirm("Would you like numbers in your password? Click OK for YES or click Cancel for NO"
+    window.confirm("Would you like numbers in your password? Click OK for YES or click Cancel for NO."
     );
       if (numbersConfirm === true) {
         passwordArray += numbers;
       }
   var specialConfirm =
-    window.confirm("Would you like special characters in your password? Click OK for YES or click Cancel for NO"
+    window.confirm("Would you like special characters in your password? Click OK for YES or click Cancel for NO."
     );
       if (specialConfirm === true) {
         passwordArray += special;
@@ -61,6 +61,4 @@ function generatePassword() {
     }
     return randomPassword;
 }
-
-
 
