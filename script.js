@@ -13,7 +13,6 @@ let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let numbers = "0123456789";
 let special = "!@#$%^&*()~";
 let passwordArray = [];
-let randomPassword = "";
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -54,11 +53,9 @@ function generatePassword() {
       if (specialConfirm === true) {
         passwordArray += special;
       }
-    let randomPassword = "";
+    let password = "";
     for (let i = 0; i < passwordLengthPrompt; i++) {
-      randomPassword += passwordArray[Math.floor(Math.random()*(passwordArray.length))];
-      console.log(Math.floor(Math.random()*(passwordArray.length)));  
+      password += passwordArray[Math.floor(Math.random()*(passwordArray.length))];
     }
-    return randomPassword;
+    return password;
 }
-
