@@ -2,7 +2,7 @@
 
 ## Description
 I've created an application for a user to generate a random password based on their preferred, specific criteria. The password must be between
-8-128 characters long, and can be a combination of different character types or the same character type (lowercase letters, uppercae letters, numbers, and symbols). 
+8-128 characters long, and can be a combination of different character types or the same character type (lowercase letters, uppercase letters, numbers, and symbols). 
 If preferred criteria ever changes, the page must be refreshed to generate a new password. 
 
 ## Screenshot
